@@ -1,0 +1,43 @@
+.stuff-bounds {
+    width: 900px;
+    height: 600px;
+    border: 1px solid #000;
+    margin: 40px;
+    padding: 20px;
+    position: relative;
+}
+
+.main-zone {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 800px;
+    height: 300px;
+    border: 1px solid red;
+    &.active {
+        background: pink
+    }
+}
+
+.other-zone {
+    position: absolute;
+    top: 400px;
+    left: 0;
+    width: 800px;
+    height: 300px;
+    border: 1px solid blue;
+    &.active {
+        background: lightblue
+    }
+}
+
+.move-box {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+    position: absolute;
+    &.selected {
+        background: yellow;
+        z-index: 100;
+    }
+}
